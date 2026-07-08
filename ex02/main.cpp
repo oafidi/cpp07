@@ -54,19 +54,11 @@ int main()
             std::cout << assigned[i] << " ";
         std::cout << std::endl;
 
-        std::cout << "\n===== SELF ASSIGNMENT =====" << std::endl;
-
-        numbers = numbers;
-
-        for (unsigned int i = 0; i < numbers.size(); i++)
-            std::cout << numbers[i] << " ";
-        std::cout << std::endl;
-
         std::cout << "\n===== OUT OF BOUNDS =====" << std::endl;
 
         try
         {
-            std::cout << numbers[100] << std::endl;
+            std::cout << numbers[5] << std::endl;
         }
         catch (const std::exception &e)
         {

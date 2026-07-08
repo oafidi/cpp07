@@ -74,7 +74,7 @@ int main()
 
     std::cout << "===== CONST STRING ARRAY =====" << std::endl;
 
-    const std::string const_str_arr[] = {"how", "much", "pass"};
+    const std::string const_str_arr[] = {"how", "much", "?"};
 
     std::cout << "Values: ";
     iter(const_str_arr, 3, printString);

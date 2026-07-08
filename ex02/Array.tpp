@@ -73,7 +73,15 @@ Array<T> &Array<T>::operator=(const Array &other)
 template <typename T>
 T& Array<T>::operator[](unsigned int i)
 {
-    if (i > n)
+    if (i >= n)
+        throw std::out_of_range("Index out of bounds!");
+    return arr[i];
+}
+
+template <typename T>
+const T& Array<T>::operator[](unsigned int i) const
+{
+    if (i >= n)
         throw std::out_of_range("Index out of bounds!");
     return arr[i];
 }
