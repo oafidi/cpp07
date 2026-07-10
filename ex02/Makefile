@@ -2,7 +2,7 @@ NAME = program
 COMPILER = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp
-HEADERS = Array.hpp Array.hpp
+HEADERS = Array.hpp Array.tpp
 
 OBJ = $(SRCS:.cpp=.o)
 

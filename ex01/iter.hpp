@@ -4,7 +4,7 @@
 template <typename T, typename U>
 void iter(T *arr, const int length, U f)
 {
-    if (!arr || !f || length < 0)
+    if (!arr || length < 0)
         return;
     for (int i = 0; i < length; i++)
         f(arr[i]);
